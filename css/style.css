@@ -1,0 +1,214 @@
+/*Add padding and margin to space out the page.
+Make the font larger too.*/
+body{
+	margin:1%;
+	padding:1%;
+	font-size:150%;
+}
+
+#home{
+	background-color:powderblue;
+	/* background-color:rgb(85, 162, 172); */
+}
+
+#about{
+	background-color:rgb(169, 228, 169);
+}
+#pastproject{
+	background-color:rgb(228, 176, 228);
+}
+#social{
+	background-color: rgb(241, 147, 147);
+}
+
+/*Make the h1 heading bigger with a bold font*/
+h1{
+	font-size: 2em; 
+	font-weight: bold;
+}
+
+
+
+/*Style the images*/
+img{
+  width: auto ;
+  max-width: 100% ;
+  height: auto ;
+	/* position: relative; */
+	/* top: -60px; */
+    /* border: 3px solid blue; */
+    /* padding: 25px;
+    border-radius: 30px;
+    margin: 30px; */
+}
+
+.center{
+	display: block;
+	margin-left: auto;
+	margin-right: auto; 
+	width: 15%;
+	height: 15%;
+}
+
+/*Make the h2 heading match h1*/
+h2{
+	font-size: 2em; 
+	font-weight: bold;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    /* grid-template-rows: repeat(4, 5vw); */
+    grid-gap: 10px;
+}
+a{
+	color: #3B3B3B;;
+}
+
+.currentIndex{
+	background-color: white;
+	text-decoration: underline;
+}
+.currentPersonal{
+	background-color:white;
+	text-decoration: underline;
+}
+
+.currentRandom{
+	background-color: white;
+	text-decoration: underline;
+}
+
+.currentSocial{
+	background-color: white;
+	text-decoration: underline;
+}
+
+/* .gallery__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+} */
+/*Improve the spacing for paragraphs AND headings*/
+p, h1, h2 {
+	font-family: 'Courier New', Courier, monospace;
+	font-size: medium;
+	color: #3B3B3B;
+	padding: 70px 0;
+	text-align: center;
+    padding: 10px;
+}
+
+#hiMessage{
+	font-size: 40px;
+}
+
+/* #personalMessage{
+	font-size: medium;
+} */
+
+#BoggleTitle{
+	font-size: 30px;
+	font-weight: bold;
+}
+
+
+
+
+
+/*Add borders around the main components and some
+space too*/
+header, h1, footer{
+	/* border: 2px solid grey; */
+	margin: 10px 0;
+}
+
+nav{
+	color: #3B3B3B;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	
+}
+
+.nav_links{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+nav a{
+	color: #3B3B3B;;
+	font-weight: bold;
+	text-decoration: dashed;
+
+  }
+
+a:hover{
+	text-decoration: underline;
+}
+
+
+main{
+	margin: 210px 0;
+	text-align: center;
+}
+
+.gallery_item {
+  width: auto;
+  height: 20px;
+}
+
+/*Change the styling for all of the list 
+items in the nav section*/
+nav li{
+	color:  #3B3B3B;;
+	/* padding:10px; */
+	margin-left: 50px;
+	/* width:25%; */
+	/* border:1px solid black; */
+	display: inline-block;
+	/* /* width: 20%; */
+}
+
+
+ /* @media screen and (min-width: 850px){ */
+
+  /*Requirement 10*/
+  /* header{ */
+    /* display: flex; */
+    /* flex-direction: row; */
+    /* justify-content: space-between; */
+    /*Your code here again.*/  
+  /* } */
+
+  /*Requirement 10*/
+  /* .nav_links{ */
+    /* display:flex; */
+    /* flex-direction: row; */
+    /*Your code here again.*/  
+  /* } */
+
+  /*Requirement 11*/
+  /* .package { */
+    /*Your code here again.*/
+    /* flex-basis: 230px; */
+  /* }  */
+/* }  */
+
+
+@media screen and (min-width: 850px){
+	nav{
+		display: flex;
+		flex-direction: row;
+		justify-content:left;
+	}
+
+}
+
+
+/*Added this so the links stay the same color*/
+/* a:visited{color:white} */
+
+
