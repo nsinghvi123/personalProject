@@ -3,13 +3,15 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="icon" href="imgs/51zLZbEVSTL._AC_SL1200_.jpg">
+	<link rel="icon" href="imgs/sunsetBackground.jpg">
 	<link rel="stylesheet" href="css/html5reset.css">
 	<link rel="stylesheet" href="css/style.css">
 	<title>About</title>
 </head>
 <body id="about">
+	
 	<header>
+		<div class="skip"><a href="index.html">Skip to Main Content</a></div>
 	  	<nav>
 			<ul class="nav_links">
 				<li><a href = "index.html">Home</a></li>
@@ -20,24 +22,46 @@
 		</nav>
 		<!-- <h1>About</h1> -->
 	</header>
-	<div class="row">
-		<div class="column" style="background-color:#aaa;">
-		  <h2>Yokohama</h2>
-		</div>
-		<div class="column" style="background-color:#bbb;">
-		  <h2>New Jersey</h2>
-		</div>
-		<div class="column" style="background-color:#ccc;">
-		  <h2>Michigan</h2>
-		</div>
-	  </div>
+	<!-- <h2 id = "pricing">Pricing</h2> -->
+
 	<main>
-		<h1>About Me</h1>
-		<img id="natashaProfile" src="imgs/linkedinphoto.JPG" alt="Profile Picture" height="200" width="200" class="center"/>
-		<p>Hi! My name is Natasha Singhvi, and I'm a student at the University of Michigan. I'm pursuing
+		<div class="price">
+			<div class="package">
+				<header><a href="#london">London</a></header>
+				<!-- <button>Buy</button> -->
+			  </div>
+		  <div class="package">
+			<header><a href="#yokohama">Yokohama</a></header>
+			<!-- <button>Buy</button> -->
+		  </div>
+		  <div class="package big_card">
+			<header><a href="#newJersey">New Jersey</a></header>
+			<!-- <button>Buy</button> -->
+		  </div>
+		  <div class="package">
+			<header><a href="#michigan">Michigan</a></header>
+			<!-- <button>Buy</button> -->
+		  </div>
+		</div>
+		<a id="london"></a>
+		<h1>London </h1>
+		<img id="londonPic" src="imgs/londonPic.JPG" alt="Profile Picture" class="center"/>
+		<p>Hi! My story starts on a mediocre day in London, where summer was just around the corner. May 7, 2001. I was birthed. </p>
+		<a id="yokohama"></a>
+		<h2> Yokohama </h2>
+		<img id="yokohamaPIC" src="imgs/japanPic.PNG" alt="Profile Picture" height="200" width="200" class="center"/>
+		<p>Soon after, we moved to Japan and lived there for five years! I went to international school (so I didn't have to learn Japanese) and 
+			loved our bathrooms!! </p>
+		<a id="newJersey"></a>
+		<h3> New Jersey </h3>
+		<p>Next Stop: New Jersey! My dad found a new job, so we said goodbye to our beloved home in Japan and moved to the States. 
+			 </p>
+		<a id="michigan"></a>
+		<h4> Michigan </h4>
+		<img src="imgs/michiganpic.jpeg" alt="Michigan" height="200" width="200" class="center"/>
+		<p>And now I'm a student at the University of Michigan. I'm pursuing
 			 a major in Computer Science and still figuring out what I'd like my minor to be - be it Political Science, Business, or even Spanish.  
 			 </p>
-			 <img src="imgs/michiganpic.jpeg" alt="Michigan" height="200" width="200" class="center"/>
 			 <p>I am currently a second semester sophomore and enjoy going to football and basketball games.</p>
 			 <img src="imgs/pianopic.jpg" alt="Piano" height="200" width="200" class="center"/>
 			 <p>In my free time, I enjoy playing the piano. In high school, it was more of an intense extracurricular activity and 
@@ -77,7 +101,7 @@
 		
 	</main>
 	<footer>
-		<p>Natasha Singhvi &copy; 2021</p>
+		<p id="footer">Natasha Singhvi &copy; 2021</p>
 	</footer>
 </body>
 </html>

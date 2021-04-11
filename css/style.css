@@ -1,22 +1,56 @@
 /*Add padding and margin to space out the page.
 Make the font larger too.*/
+
+html{
+  scroll-behavior: smooth;
+}
+
+/*Req 3a*/
+.skip a{
+
+  background: black;
+  left: 0;
+  padding: 7px;
+  -webkit-transition: top 1s ease-out;
+  transition: top 1s ease-out;
+  z-index: 1;
+
+  
+  top: -50px; /*supposed to make top left tab show up */
+   position: absolute; 
+}
+/*Req 3b*/
+/*Write selector/rule property to position the skip class element*/
+.skip a:focus{  
+  top: 10px;
+}
+
 body{
 	margin:1%;
 	padding:1%;
 	font-size:150%;
+  background-size: 100%;
 }
 
 #home{
 	background-image: url("../imgs/elliott-engelmann-DjlKxYFJlTc-unsplash.jpg");
-	/* background-color:powderblue; */
-	/* background-color:rgb(85, 162, 172); */
 }
 
 #about{
-	background-color:rgb(169, 228, 169);
+  background-attachment: fixed; /* Parallax effect */     
+  background-position: center;  /* Parallax effect */
+  background-repeat: no-repeat; /* Parallax effect */
+  background-size: cover;       /* Parallax effect */
+	background-image: url("../imgs/sunset.jpeg");
+	/* background-color:rgb(169, 228, 169); */
 }
 #pastproject{
-	background-color:rgb(228, 176, 228);
+  background-attachment: fixed; /* Parallax effect */     
+  background-position: center;  /* Parallax effect */
+  background-repeat: no-repeat; /* Parallax effect */
+  background-size: cover;       /* Parallax effect */
+  background-image: url("../imgs/sunsetProjects.jpeg");
+	/* background-color:rgb(228, 176, 228); */
 }
 #social{
 	background-color: rgb(241, 147, 147);
@@ -26,9 +60,55 @@ body{
 h1{
 	font-size: 2em; 
 	font-weight: bold;
+  background-color: black:
 }
 
+/*Requirement 4*/
+.price{
+  min-height: 500px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  /*Your code here*/
+  /*You must use flex.
+  /*Don't forget to vertically and horizontally 
+  align the element*/
+}
 
+/*Requirement 5*/
+.package {
+text-align: center;
+margin: 10px;
+background: black;
+border-radius: 2px;
+padding: 0 0 50px 0;
+flex-basis: 300px;
+color: white;
+/*Your code here.*/
+/*Take a look at flex-basis*/
+
+}
+
+div.package header{
+color: white;
+/* text-align: center;
+background: white;
+border: 2px solid white;
+padding: 20px 0;
+border-radius: 7px 7px 0 0; */
+}
+
+#londonPic{
+  width: 300px;
+  height: 200px;
+}
+
+#footer{
+  font-size: 15px;
+  background-color: black;
+}
 
 /*Style the images*/
 img{
@@ -43,6 +123,13 @@ img{
     margin: 30px; */
 }
 
+#headtag{
+  color: white;
+  font-size: 0px;
+  background-color: black;
+}
+
+ 
 .center{
 	display: block;
 	margin-left: auto;
@@ -64,41 +151,42 @@ h2{
     grid-gap: 10px;
 }
 a{
-	color: #3B3B3B;;
+	color: white;
 }
 
 .currentIndex{
-	background-color: white;
+
 	text-decoration: underline;
 }
 .currentPersonal{
-	background-color:white;
+	/* background-color:white; */
 	text-decoration: underline;
+  background-color: black;
 }
 
 .currentRandom{
-	background-color: white;
+	/* background-color: white; */
 	text-decoration: underline;
+  background-color: black;
 }
 
 .currentSocial{
-	background-color: white;
+	/* background-color: white; */
 	text-decoration: underline;
+  background-color: black;
 }
 
-/* .gallery__img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-} */
 /*Improve the spacing for paragraphs AND headings*/
-p, h1, h2 {
+p, h1, h2, h3, h4{
 	font-family: 'Courier New', Courier, monospace;
-	font-size: medium;
-	color: #3B3B3B;
+	font-size: 50px;
+	color: white;
 	padding: 70px 0;
 	text-align: center;
-    padding: 10px;
+  padding: 10px;
+  font-weight: bold;
+  background-color: black;
+
 }
 
 #hiMessage{
@@ -125,20 +213,27 @@ header, h1, footer{
 	margin: 10px 0;
 }
 
-
 nav{
-	color: #3B3B3B;
+  color: white;
+  text-align: center;
+  width: 100%;
 }
+
 
 .nav_links{
 	display: flex;
-	flex-direction: row;
-	justify-content:space-between;
+	flex-direction: column;
+	/* justify-content:space-between; */
 	text-align: center;
+  /* background-color: black; */
+  width: 100%;
+
 }
 
+
 nav a{
-	color: #3B3B3B;;
+  background-color: black;
+	color: white;
 	font-weight: bold;
 	text-decoration: dashed;
 
@@ -182,12 +277,17 @@ main{
   height: 20px;
 }
 
+
+#links, #linksSecond, #linksThird{
+  background-color: black;
+}
+
 /*Change the styling for all of the list 
 items in the nav section*/
 nav li{
 	color:  #3B3B3B;;
 	/* padding:10px; */
-	margin-left: 50px;
+	/* margin-left: 50px; */
 	/* width:25%; */
 	/* border:1px solid black; */
 	display: inline-block;
@@ -195,39 +295,7 @@ nav li{
 }
 
 
- /* @media screen and (min-width: 850px){ */
 
-  /*Requirement 10*/
-  /* header{ */
-    /* display: flex; */
-    /* flex-direction: row; */
-    /* justify-content: space-between; */
-    /*Your code here again.*/  
-  /* } */
-
-  /*Requirement 10*/
-  /* .nav_links{ */
-    /* display:flex; */
-    /* flex-direction: row; */
-    /*Your code here again.*/  
-  /* } */
-
-  /*Requirement 11*/
-  /* .package { */
-    /*Your code here again.*/
-    /* flex-basis: 230px; */
-  /* }  */
-/* }  */
-
-
-@media screen and (min-width: 850px){
-	nav{
-		display: flex;
-		flex-direction: row;
-		justify-content:left;
-	}
-
-}
 
 /* put in citation here*/
 
@@ -240,6 +308,7 @@ nav li{
   font-weight:bolder;  
   font-family:'Roboto';
   font-size:35px;
+  background-color: black;
   /* padding-top:40vh;
   height:100vh; */
   /* overflow:hidden; */
@@ -254,37 +323,40 @@ div {
   white-space:nowrap;
 }
 
-div:first-of-type {    /* For increasing performance 
+.sign:first-of-type {    /* For increasing performance 
                        ID/Class should've been used. 
                        For a small demo 
                        it's okaish for now */
-  /* animation: showup 7s 1; */
-  animation-duration: 7s;
+  animation: showup 7s; 
+  /* animation-duration: 7s; */
   animation-fill-mode: forwards;
-  animation-iteration-count: 1;
+  /* animation-iteration-count: 1; */
 
 
-  font-weight:bolder;
+   font-weight:bolder;
 }
 
-div:last-of-type {
+.sign:last-of-type {
   width:0px;
-  animation: reveal 7s 1;
-  animation-duration: 7s;
-  animation-iteration-count: 1;
+  animation: reveal 7s;
   animation-fill-mode: forwards;
+  /* animation: logo_grow 15s 1; */
+  /* animation-duration: 7s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards; */
 
 
 
   font-weight:bolder;
 }
 
-div:last-of-type span {
+.sign:last-of-type span {
   margin-left:-355px;
-  animation: slidein 7s 1;
-  animation-duration: 7s;
-  animation-iteration-count: 1;
+  animation: slidein 7s;
   animation-fill-mode: forwards;
+  /* animation-duration: 7s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards; */
 
 
 
@@ -295,14 +367,14 @@ div:last-of-type span {
     0% {opacity:0;}
     20% {opacity:1;}
     80% {opacity:1;}
-    100% {opacity:0;}
+    100% {opacity:1;}
 }
 
 @keyframes slidein {
     0% { margin-left:-800px; }
     20% { margin-left:-800px; }
     35% { margin-left:0px; }
-    100% { margin-left:0px; }
+    100% {opacity:1; margin-left:0px; }
 }
 
 @keyframes reveal {
@@ -310,7 +382,7 @@ div:last-of-type span {
     20% {opacity:1;width:0px;}
     30% {width:355px;}
     80% {opacity:1;}
-    100% {opacity:0;width:355px;}
+    100% {opacity:1;width:355px;}
 }
 
 
@@ -322,20 +394,47 @@ p {
 
 
 .column {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
+  /* display: flex;
+  flex-direction: column;
+  align-items: center; */
   text-align: center;
   height: 100px;
 	/* width: 33.33%; */
   }
+
+
+  @media screen and (min-width: 850px){ 
+    .nav_links{
+      display: flex;
+      flex-direction: row;
+      justify-content:flex-end;
+      text-align: center;
+    }
+
+    nav li{
+      color:  #3B3B3B;;
+      /* padding:10px; */
+      margin-left: 50px;
+      /* width:25%; */
+      /* border:1px solid black; */
+      display: inline-block;
+      /* /* width: 20%; */
+    }
+
+    p {
+      font-size:30px;
+      color:white;
+      margin-top:200px;
+      text-decoration: none;
+      }
+
+      #BogglePic {
+        height: 300px;
+        width: 400px;
+      }
+    
+  }  
   
-  /* Clear floats after the columns */
-  /* .row:after {
-	content: "";
-	display: table;
-	clear: both;
-  } */
 
 /*Added this so the links stay the same color*/
 /* a:visited{color:white} */
