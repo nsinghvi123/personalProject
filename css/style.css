@@ -403,6 +403,9 @@ p {
   }
 
 
+  
+
+
   @media screen and (min-width: 850px){ 
     .nav_links{
       display: flex;
@@ -432,8 +435,24 @@ p {
         height: 300px;
         width: 400px;
       }
-    
   }  
+
+ 
+  @media screen and (prefers-reduced-motion: reduce){
+    html{
+        scroll-behavior: auto; /* Removes scroll animation */
+    }
+  
+    .skip a{
+      -webkit-transition: none; /* sets to default setting */
+      transition: none;        /* sets to default setting */
+     }
+  
+    /*Turn off parallax*/
+    header{
+      background-attachment: initial;
+    }
+  }
   
 
 /*Added this so the links stay the same color*/
